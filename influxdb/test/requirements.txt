@@ -1,2 +1,3 @@
-influxdb-client
+influxdb3-python
+pandas
 pytest

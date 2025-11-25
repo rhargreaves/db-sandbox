@@ -12,7 +12,7 @@ db-clean:
 	rm -rf influxdb3/core/data
 	rm -rf influxdb3/core/plugins
 	docker compose down
-	docker compose rm -rf
+	docker compose rm
 .PHONY: db-clean
 
 create-admin-token:
@@ -20,5 +20,5 @@ create-admin-token:
 .PHONY: create-admin-token
 
 test:
-	docker compose run python-tests
+	docker compose run --remove-orphans --rm python-tests
 .PHONY: test
