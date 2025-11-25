@@ -1,6 +1,6 @@
 # DB Sandbox
 
-Look at the state of it :triumph:
+Playing around with various databases
 
 ## InfluxDB
 
