@@ -33,6 +33,7 @@ services:
         target: /test
     environment:
       - INFLUXDB_URL=http://influxdb3-core:8181
-      - INFLUXDB_TOKEN=${INFLUXDB_TOKEN}
+    env_file:
+      - .env
     depends_on:
       - influxdb3-core
